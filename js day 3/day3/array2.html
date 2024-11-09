@@ -1,0 +1,14 @@
+<script>
+  var number = [10, 21, 32, 95, 65, 40];
+  var max1 = number[0];
+  var max2 = number[0];
+  for (var i = 0; i < number.length; i++) {
+    // max1=max2;
+        if (number[i] > max1) {
+        max1 = number[i];
+        }
+     max2 = number[i - 1];
+  }
+  console.log("First largest number is: ", max1);
+  console.log("Second largest number is: ", max2);
+</script>

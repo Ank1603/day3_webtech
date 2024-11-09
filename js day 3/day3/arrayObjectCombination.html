@@ -1,0 +1,50 @@
+<script>
+  var product = [
+    {
+      name: "Apple",
+      price: 100000,
+      size: ["min,max.maxpro"],
+      path: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8XklLz5_W7_iymYU-ecO4exAxqP8ZoS7vdw&s",
+    },
+
+    {
+      name: "samsung",
+      price: 80000,
+      size: ["min,max.maxpro"],
+      path: "https://images.samsung.com/is/image/samsung/p6pim/in/2401/gallery/in-galaxy-s24-s928-sm-s928bztwins-thumb-539573366?$344_344_PNG$",
+    },
+
+    {
+      name: "OnePlus",
+      price: 50000,
+      size: ["min,max.maxpro"],
+      path: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9ow79gPeyYMRq-tIt15oPZlfHCHF7C1cng&s",
+    },
+  ];
+
+  console.log(product);
+
+  for (let ans of product) {
+    document.write(`
+             <div>
+    <img src="${ans.path}" alt="">
+    <h2>${ans.price}</h2>
+    <p>${ans.name}</p>
+</div>
+   `);
+    console.log(ans);
+  }
+</script>
+<style>
+  div {
+    float: left;
+    text-align: center;
+     border: 1px solid;
+  }
+  img {
+    width: 300px;
+   
+    padding: 20px;
+    margin: right 20px;
+  }
+</style>

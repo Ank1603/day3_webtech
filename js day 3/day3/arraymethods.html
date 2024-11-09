@@ -1,0 +1,24 @@
+<script>
+    var number=[1,5,6,4]
+
+    console.log(number);
+    number.push(8);//1 5 6 4 8
+
+    number.unshift(3);//
+    console.log(number);//3, 1, 5, 6, 4, 8
+
+    number.pop();
+    console.log(number);//3, 1, 5, 6, 4 
+
+    number.shift();
+    console.log(number);//1, 5, 6, 4 
+
+    number.includes(5);
+    console.log(number.includes(5));//true
+
+    console.log(number.indexOf(5));//1
+    console.log(number.indexOf(125));//-1
+
+    var productsize =['xl','m','s','l'];
+    console.log(productsize.join('-'));//xl-m-s-l
+</script>

@@ -1,0 +1,12 @@
+<script>
+    'use restrict'
+    function calculator(p,r,n){
+        r=r/12/100;
+        n=n*12;
+        //P x R x (1+R)^N / [(1+R)^N-1] 
+        var emi=p*r*(1+r)**n / [(1+r)**n-1];
+        console.log(emi);
+    }
+
+    calculator(2500000,8.75,30);
+</script>

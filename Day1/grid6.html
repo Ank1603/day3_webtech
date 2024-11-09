@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, alias.
+    </div>
+    <div class="col-6">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, commodi.
+    </div>
+     <div class="col-3">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, commodi.
+    </div>
+   
+   
+  </div>
+</div>
+<style>
+  .container {
+    width: 1200px;
+    margin: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+  .col-6{
+    width: calc(50% - 40px);
+    border: solid;
+    padding: 20px;
+    box-sizing: border-box;
+     margin:20px;
+    /* box size will not allowed margin so ,if want to apply margin then we need width:calc(25%-40px);
+    margin:20px */
+  }
+  .col-3 {
+    width: calc(25% - 40px);
+    border: solid;
+    padding: 20px;
+    margin:20px;
+    box-sizing: border-box;
+  }
+  
+</style>

@@ -1,0 +1,29 @@
+<script>
+    //to stored unsimilar data we used object
+    var product = {
+        name:"Apple",
+        price:100000,
+        size:["xxxl, xxl, xl, l, m, s"],
+        path:"https://i.gadgets360cdn.com/large/flipkart-sale-july-2021-large_1627098470446.jpg"
+    }
+    
+
+document.write(`
+<div>
+    <img src="${product.path}" alt="">
+    <h2>${product.price}</h2>
+    <p>${product.name}</p>
+</div>
+`)
+console.log(product);
+</script>
+<style>
+    img {
+        width: 300px;
+        height:400px;
+        border: 2px solid;
+        padding:10px;
+        text-align: center;
+        display: flex;
+    }
+</style>

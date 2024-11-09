@@ -1,0 +1,15 @@
+<div style ="border: solid; padding:10px; width: 200px;">
+    <button> login </button>
+</div>
+
+<script>
+    document.querySelector('div').style.display="none";
+
+    setTimeout(function(){
+        document.querySelector('div').style.display="block";
+            setTimeout(function(){
+              document.querySelector('div').style.display="block";
+
+    },3000); // This will show the div after 3 seconds.
+},3000);
+</script>
